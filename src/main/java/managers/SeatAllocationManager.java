@@ -13,12 +13,10 @@ public class SeatAllocationManager {
     private Integer totalNumberOfPassengers;
     private List<Seat> sortedSeats;
 
-
     public SeatAllocationManager(Integer totalNumberOfPassengers, List<Seat> seats) {
         this.totalNumberOfPassengers = totalNumberOfPassengers;
         this.sortedSeats = sort(seats);
     }
-
 
     private List<Seat> sort(List<Seat> seats) {
         List<Seat> sortedList = seats.stream().sorted(new SeatComparator()::compare).collect(Collectors.toList());

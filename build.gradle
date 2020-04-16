@@ -32,12 +32,13 @@ dependencies {
 
 apply plugin: "io.freefair.lombok"
 
-//application {
-//    mainClassName = project.hasProperty("mainClass") ? getProperty("mainClass") : "NULL"
-//}
+application {
+    mainClassName = project.hasProperty("mainClass") ? getProperty("mainClass") : "NULL"
+}
 
 
-//task execute(type:JavaExec) {
-//    main = project.hasProperty("mainClass") ? getProperty("mainClass") : "NULL"
-//    classpath = sourceSets.main.runtimeClasspath
-//}
+task execute(type:JavaExec) {
+    main = project.hasProperty("mainClass") ? getProperty("mainClass") : "NULL"
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+}

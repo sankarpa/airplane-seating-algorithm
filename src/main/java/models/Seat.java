@@ -16,7 +16,7 @@ public class Seat {
     private Integer seatNumber;
     private Integer passengerId;
 
-    public boolean isOccupied(){
-        return  passengerId != null;
+    public boolean isOccupied() {
+        return passengerId != null;
     }
 }

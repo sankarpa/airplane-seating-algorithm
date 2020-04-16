@@ -1,4 +1,7 @@
 # Airline-Seating-Algorithm
+
+**Problem Statement**
+
 A Java program to arrange the seating for the Airline Passengers
 
 A program that helps to allocate seats to the passengers in a flight based on the following input and rules.
@@ -27,7 +30,23 @@ Below are the points to be noted:
 3. A VISUAL output that is printed (on the screen, in a console or exported to a file etc.) in way that is easy to read, identify the aisle, middle and window rows and has clear seating plan and passenger number.
 4. Testability, TDD and test cases
 
+
 **How to Run**
+1. Run the below command
+
+```
+./gradlew build
+./gradlew  -PmainClass=AirPlaneSeatingManagement execute
+```
+
+3. Input seat configuration like [[3,2], [4,3], [2,3], [3,4]]
+4. Enter the total number of passengers the program will run  
+
+Example screenshot below
+![Demo](./output.png)
+
+
+
 
 
 
