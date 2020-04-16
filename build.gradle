@@ -1,0 +1,43 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "io.freefair.gradle:lombok-plugin:5.0.0-rc6"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'AirPlaneSeatingAlgorithm'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.json', name: 'json', version: '20090211'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.3.1'
+}
+
+apply plugin: "io.freefair.lombok"
+
+//application {
+//    mainClassName = project.hasProperty("mainClass") ? getProperty("mainClass") : "NULL"
+//}
+
+
+//task execute(type:JavaExec) {
+//    main = project.hasProperty("mainClass") ? getProperty("mainClass") : "NULL"
+//    classpath = sourceSets.main.runtimeClasspath
+//}
