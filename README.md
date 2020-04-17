@@ -44,12 +44,3 @@ Below are the points to be noted:
 
 Example screenshot below
 ![Demo](./output.png)
-
-
-
-
-
-
-
-
-[]: file:./Seating_Result.pdf
